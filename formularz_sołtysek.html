@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz kontaktowy</title>
+</head>
+<body bgcolor="silver">
+    <h1>Formularz kontaktowy – Nikodem Sołtysek</h1>
+    
+    <form action="mailto:niksolt3@edu.gdansk.pl?subject=nikodem%20sołtysek" method="post" enctype="text/plain">
+        
+        <!-- Obszar wprowadzania większej ilości tekstu -->
+        <label for="message">Wiadomość:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Wpisz swoją wiadomość tutaj"></textarea><br><br>
+
+        <!-- Przyciski BUTTON -->
+        <button type="button" onclick="alert('Przycisk 1 został kliknięty!')">Przycisk 1</button>
+        <button type="button" onclick="alert('Przycisk 2 został kliknięty!')">Przycisk 2</button><br><br>
+
+        <!-- Trzy sekcje INPUT radio (poziome) -->
+        <label>Wybierz metodę kontaktu:</label><br>
+        <input type="radio" id="option1" name="contact_method" value="Email" checked>
+        <label for="option1">Email</label>
+        <input type="radio" id="option2" name="contact_method" value="Telefon">
+        <label for="option2">Telefon</label>
+        <input type="radio" id="option3" name="contact_method" value="SMS">
+        <label for="option3">SMS</label>
+        <input type="radio" id="option4" name="contact_method" value="Osobiście">
+        <label for="option4">Osobiście</label><br><br>
+
+        <!-- Trzy sekcje INPUT radio (pionowe) -->
+        <label>Preferencje kontaktu czasowego:</label><br>
+        <input type="radio" id="option5" name="contact_time" value="Poranek">
+        <label for="option5">Poranek</label><br>
+        <input type="radio" id="option6" name="contact_time" value="Południe">
+        <label for="option6">Południe</label><br>
+        <input type="radio" id="option7" name="contact_time" value="Wieczór">
+        <label for="option7">Wieczór</label><br><br>
+
+        <!-- Trzy sekcje INPUT radio (pięć opcji poziomo) -->
+        <label>Rodzaj wiadomości :</label><br>
+        <input type="radio" id="option8" name="message_type" value="Zapytanie">
+        <label for="option8">Zapytanie</label>
+        <input type="radio" id="option9" name="message_type" value="Prośba">
+        <label for="option9">Prośba</label>
+        <input type="radio" id="option10" name="message_type" value="Skarga">
+        <label for="option10">Skarga</label>
+        <input type="radio" id="option11" name="message_type" value="Podziękowanie">
+        <label for="option11">Podziękowanie</label>
+        <input type="radio" id="option12" name="message_type" value="Inne">
+        <label for="option12">Inne</label><br><br>
+
+        <!-- Trzy sekcje INPUT checkbox (cztery pionowo) -->
+        <label>Wybór tematyczny:</label><br>
+        <input type="checkbox" id="checkbox1" name="topics" value="Technologia" checked>
+        <label for="checkbox1">Technologia</label><br>
+        <input type="checkbox" id="checkbox2" name="topics" value="Edukacja">
+        <label for="checkbox2">Edukacja</label><br>
+        <input type="checkbox" id="checkbox3" name="topics" value="Sport">
+        <label for="checkbox3">Sport</label><br>
+        <input type="checkbox" id="checkbox4" name="topics" value="Kultura">
+        <label for="checkbox4">Kultura</label><br><br>
+
+        <!-- Trzy sekcje INPUT checkbox (trzy pionowo) -->
+        <label>Preferencje w zakresie komunikacji</label><br>
+        <input type="checkbox" id="checkbox5" name="communication_pref" value="Email">
+        <label for="checkbox5">Email</label><br>
+        <input type="checkbox" id="checkbox6" name="communication_pref" value="Telefon">
+        <label for="checkbox6">Telefon</label><br>
+        <input type="checkbox" id="checkbox7" name="communication_pref" value="SMS">
+        <label for="checkbox7">SMS</label><br><br>
+
+        <!-- Trzy sekcje INPUT checkbox (pięć poziomo) -->
+        <label>Preferencje kontaktu:</label><br>
+        <input type="checkbox" id="checkbox8" name="contact_method_pref" value="Rano" checked>
+        <label for="checkbox8">Rano</label>
+        <input type="checkbox" id="checkbox9" name="contact_method_pref" value="Południe">
+        <label for="checkbox9">Południe</label>
+        <input type="checkbox" id="checkbox10" name="contact_method_pref" value="Wieczór">
+        <label for="checkbox10">Wieczór</label>
+        <input type="checkbox" id="checkbox11" name="contact_method_pref" value="Brak Preferencji">
+        <label for="checkbox11">Brak Preferencji</label>
+        <input type="checkbox" id="checkbox12" name="contact_method_pref" value="Inne">
+        <label for="checkbox12">Inne </label><br><br>
+
+        <!-- Pola tekstowe INPUT -->
+        <label for="text1">Imię i Nazwisko:</label><br>
+        <input type="text" id="text1" name="name"><br><br>
+
+        <label for="text2">Email:</label><br>
+        <input type="text" id="text2" name="email" value="example@example.com"><br><br>
+
+        <label for="text3">Numer telefonu (maksymalnie 10 znaków):</label><br>
+        <input type="text" id="text3" name="phone" maxlength="10"><br><br>
+
+        <label for="password">Hasło:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="text5">Miasto:</label><br>
+        <input type="text" id="text5" name="city"><br><br>
+
+        <!-- Listy rozwijalne SELECT -->
+        <label for="select1">Preferencje kontaktu :</label><br>
+        <select id="select1" name="contact_pref">
+            <option value="Email" selected>Email</option>
+            <option value="Telefon">Telefon</option>
+            <option value="SMS">SMS</option>
+            <option value="Osobiście">Osobiście</option>
+            <option value="Inne">Inne</option>
+        </select><br><br>
+
+        <label for="select2">Wybór tematu:</label><br>
+        <select id="select2" name="topic_choice">
+            <option value="Technologia">Technologia</option>
+            <option value="Edukacja">Edukacja</option>
+            <option value="Sport">Sport</option>
+            <option value="Kultura">Kultura</option>
+        </select><br><br>
+
+        <label for="select3">Preferencje kontaktu czasowego:</label><br>
+        <select id="select3" name="contact_method_pref">
+            <option value="Rano">Rano</option>
+            <option value="Południe" selected>Południe</option>
+            <option value="Wieczór">Wieczór</option>
+        </select><br><br>
+
+        <!-- Przycisk wysyłania formularza -->
+        <input type="submit" value="WYŚLIJ">
+        <!-- Przycisk czyszczenia formularza -->
+        <input type="reset" value="CZYŚĆ">
+    </form>
+	<A HREF="index.html">wróć </A>
+</body>
+</html>
